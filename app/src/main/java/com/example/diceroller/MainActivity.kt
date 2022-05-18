@@ -14,13 +14,13 @@ class MainActivity : AppCompatActivity() {
         rollButton.setOnClickListener{
             rollDice()
         }
-        class Dice(val numSides: Int){
-            fun roll(): Int{
-                return (1..numSides).random()
-            }
+
+    }
+    class Dice(val numSides: Int){
+        fun roll(): Int{
+            return (1..numSides).random()
         }
     }
-
     private fun rollDice() {
         val dice = Dice(6)
         val diceRoll = dice.roll()
